@@ -1,0 +1,35 @@
+CREATE DATABASE bankform;
+
+
+GRANT ALL ON bankform.* TO 'ish'@'localhost' IDENTIFIED BY 'mak';
+GRANT ALL ON bankform.* TO 'ish'@'127.0.0.1' IDENTIFIED BY 'mak';
+
+
+
+
+CREATE TABLE details(
+id int NOT NULL,
+fName varchar(255) NOT NULL,
+mName varchar(255),
+lName varchar(255) NOT NULL,
+dob date NOT NULL,
+gender varchar(255) NOT NULL,
+mStatus varchar(255) NOT NULL,
+address varchar(255) NOT NULL,
+email varchar(255),
+moNo int NOT NULL,
+alternatemooNo int,
+adhaarNo int NOT NULL,
+panNo varchar(255) NOT NULL,
+accNo int NOT NULL,
+brName varchar(255) NOT NULL,
+ifsc varchar(255) NOT NULL,
+nomineeName varchar(255) NOT NULL,
+nomineedob date NOT NULL,
+nomineeRelation varchar(255) NOT NULL,
+passbook int,
+chequebook int,
+debitcard int,
+pBanking int,
+iBanking int
+)ENGINE = INNODB DEFAULT CHARSET = latin1;
